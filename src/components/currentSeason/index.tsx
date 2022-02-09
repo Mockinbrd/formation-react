@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import {formatDistanceToNow} from 'date-fns';
+import PropTypes from 'prop-types';
 import {currentYear, getCurrentSeason, Season, seasons} from "../constants";
 
-function CurrentSeason({onClick}: { onClick: any }): JSX.Element {
+CurrentSeason.propTypes = {
+    onClick: PropTypes.func.isRequired
+}
+
+function CurrentSeason({onClick}): JSX.Element {
 
     const [currentSeason] = useState<Season>(getCurrentSeason());
 
