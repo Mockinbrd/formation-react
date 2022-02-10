@@ -4,7 +4,7 @@ type Summer = 'Summer';
 type Spring = 'Spring';
 export type Season = Winter | Falls | Summer | Spring;
 
-const winter: Winter = 'Winter';
+export const winter: Winter = 'Winter';
 const falls: Falls = 'Falls';
 const summer: Summer = 'Summer';
 const spring: Spring = 'Spring';
