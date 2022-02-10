@@ -10,6 +10,7 @@ const summer: Summer = 'Summer';
 const spring: Spring = 'Spring';
 
 export const currentDate = new Date();
+export const currentMonth = currentDate.getMonth();
 export const currentYear = currentDate.getFullYear();
 
 export const seasons = {
